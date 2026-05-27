@@ -1,0 +1,110 @@
+ APEX SOLUTIONS LTD — INTERNAL COMMS DUMP (API export v2
+exported: 2026-05-24T08:32:11Z   |  source: crm-api/v3/contacts     status: RAW / UNPROCESSED
+WARNING: This file contains unvalidated third-party data. Do not expose to the frontend directly.
+
+
+ 
+ TICKET #10482 
+From: James Odhiambo <j.odhiambo@apexsolutions.co.ke>
+Submitted via web form at 09:14 AM
+. Client says the card ending **1111 keeps getting declined. ran test txn with dummy card 4111111111111111
+And it went through fine.  Follow-up sent to billing@apexsolutions.co.ke  cc'd  finance_head@apex-solutions.org
+ 
+ref: https://crm.apexsolutions.co.ke/tickets/10482
+screenshot attached: http://cdn.apexsolutions.co.ke/screenshots/ticket_10482_err.png
+ 
+Phone on file for this client:  +254 712 345 678  (mobile)
+Alt contact listed as:  (020) 386-4400   ← landline, often unreachable after 5:00 pm
+ 
+ 
+ TICKET #10483 
+from noreply@thirdpartyvendor.io  (AUTOMATED)  time: 23:59 
+ALERT: Suspicious transaction detected.
+ card used:   5500-3344-0250-0304   amount: $530.50 USD
+ merchant:    APEX STORE KE
+ time of txn: 23:58
+ IP origin:   197.232.4.88
+ 
+Forwarded to: security@apexsolutions.co.ke, fraud.alerts@apex-solutions.org
+If this was not you, contact us at: 1-800-555-0192 or +1 (312) 409-8800
+ 
+ 
+NOTES FROM STANDUP 
+10:00 AM  @kevin  : yo the new ALU facilitator started today — her email is   aisha.kamau@alueducation.com
+         Make sure she gets added to the mailing list
+10:02 AM  @priya  : done, also added  b.nkosi@alumni.alueducation.com  — he's the alumni rep
+10:04 AM  @kevin  : What about the SI cohort contact?
+10:05 AM  @priya  : that would be  m.teta@si.alueducation.com   and   j.doe@si.alueducation.com
+10:07 AM  @kevin  : cool. btw the API docs are at https://developer.apexsolutions.co.ke/docs/v2
+10:08 AM  @priya  : also check https://www.notion.so/apex-team/sprint-42-retrospective-aabbccdd1122
+10:09 AM  @kevin  : someone sent a random email to   not-valid@@apexsolutions.com   lol
+10:10 AM  @priya  : haha yeah and another to   missingdomain@   — these need to be filtered out
+10:11 AM  @kevin  : the card   9999 9999 9999 9999  was flagged too — is that even a real BIN?
+10:12 AM  @priya  : no, fake. also   1234-5678-9012-3456  — probably test data again
+ 
+ 
+  FORM SUBMISSIONS 
+ 
+[1]  name: Alice Mwangi   email: alice.mwangi99@gmail.com   phone: 0722 100 200
+    card: 3714 496353 98431   amount owed: KES 4,500.00   time of visit: 2:30 PM
+ 
+[2]  name: Bob Kariuki   email: BOBkariuki@Yahoo.Com   phone: +254-733-987-654
+    card: 6011 1311 9877 1117  amount: $89.99   visited at  14:45
+ 
+[3]  name: Cynthia Otieno   email: c_otieno.support@apexsolutions.co.ke   ph: (254) 700-123-456
+    No card on file. Invoice total: KES 12,000   appt time: 08:00 AM
+ 
+[4]  name: David Njoroge   email:    david@ missingdomain    ← INVALID, missing domain
+    phone: 0800-723-000   card: 4060 0234 0220 0002  (test card — do not charge)
+    total: $0.00   time: 13:00
+ 
+[5]  name: Evelyn Wanjiku   email: evelyn.wanjiku@alueducation.com   role: ALU Staff
+    emergency contact phone: +44 (0)20 7946 0321
+    no card — internal user   scheduled: 9:00 AM
+ 
+[6]  name: Frank Otieno    email: frank@   (MISSING DOMAIN — form bug?)
+    phone: not provided   card: 0000-0000-0000-0000   flagged as suspicious
+ 
+ 
+ MARKETING EMAIL BLAST
+ 
+<html>
+ <head><title>Apex May Newsletter</title></head>
+ <body>
+   <h1>Hello from Apex Solutions!</h1>
+   <p>We're excited to share our <strong>May 2026 updates</strong> with you.</p>
+   <p>Visit our new portal at <a href="https://portal.apexsolutions.co.ke">https://portal.apexsolutions.co.ke</a>
+      or read the full changelog at <a href="http://changelog.apexsolutions.co.ke/v3">http://changelog.apexsolutions.co.ke/v3</a></p>
+ 
+   <ul>
+     <li>New dashboard launched — see <em>what's new</em></li>
+     <li>Card processing now supports <span class="highlight">Amex and Discover</span></li>
+     <li>24/7 support line: +254 800 000 111</li>
+   </ul>
+ 
+   <p style="colour: red;">URGENT: If you received a charge on card 3782 822463 10005 that you did not authorise,
+   call us immediately at 1-800-555-9999 or email fraud@apexsolutions.co.ke</p>
+ 
+   <img src="https://cdn.apexsolutions.co.ke/banners/may2026.png" alt="May Banner" />
+   <footer>
+     <p>Unsubscribe: <a href="https://apexsolutions.co.ke/unsubscribe?token=abc123XYZ">click here</a></p>
+     <small>&copy; 2026 Apex Solutions Ltd. All rights reserved.</small>
+   </footer>
+ </body>
+</html>
+ 
+ 
+ COMMUNITY FEED 
+ 
+@james_dev  [10:30 AM] : Just shipped the new payment module! #RegexIsFun #100DaysOfCode #Frontend
+@ceo_apex   [12:01 PM] : Big news dropping this week. Stay tuned. #ApexSolutions #Nairobi #TechAfrica
+@facilitator_aisha [3:45 PM]: My first PR got merged!! huge day #ALU #SoftwareEngineering #Proud
+@kevin_qa   [5:59 PM] : found 3 bugs before EOD  #QA #BugHunter #NeverSettle
+ 
+potential XSS in form field: <script>alert('xss')</script>  ← flagged by security scan
+sql attempt found in notes field: ' OR 1=1; DROP TABLE users; --
+another bad input: <img src=x onerror=alert(1)>
+
+
+
+
