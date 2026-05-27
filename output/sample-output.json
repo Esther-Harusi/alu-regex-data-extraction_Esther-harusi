@@ -1,0 +1,204 @@
+{
+  "input_flagged": true,
+  "security_flags": [
+    {
+      "type": "XSS",
+      "snippet": "<script>alert('xss')</script>",
+      "pos": 4906
+    },
+    {
+      "type": "SQLi",
+      "snippet": "DROP TABLE",
+      "pos": 5008
+    }
+  ],
+  "emails": {
+    "valid": [
+      "j.odhiambo@apexsolutions.co.ke",
+      "billing@apexsolutions.co.ke",
+      "finance_head@apex-solutions.org",
+      "noreply@thirdpartyvendor.io",
+      "security@apexsolutions.co.ke",
+      "fraud.alerts@apex-solutions.org",
+      "alice.mwangi99@gmail.com",
+      "bobkariuki@yahoo.com",
+      "c_otieno.support@apexsolutions.co.ke",
+      "fraud@apexsolutions.co.ke"
+    ],
+    "alu": [
+      {
+        "address": "aisha.kamau@alueducation.com",
+        "category": "alu_official"
+      },
+      {
+        "address": "b.nkosi@alumni.alueducation.com",
+        "category": "alu_alumni"
+      },
+      {
+        "address": "m.teta@si.alueducation.com",
+        "category": "alu_si"
+      },
+      {
+        "address": "j.doe@si.alueducation.com",
+        "category": "alu_si"
+      },
+      {
+        "address": "evelyn.wanjiku@alueducation.com",
+        "category": "alu_official"
+      }
+    ],
+    "rejected": []
+  },
+  "phone_numbers": {
+    "valid": [
+      "+254 712 345 678",
+      "(020) 386-4400",
+      "800-555-0192",
+      "+1 (312) 409-8800",
+      "0722 100 200",
+      "3714 4963",
+      "+254-733-987-654",
+      "(254) 700-123-456",
+      "0800-723-000",
+      "7946 0321",
+      "+254 800 000 111",
+      "3782 8224",
+      "800-555-9999"
+    ],
+    "rejected": [
+      {
+        "value": "197.232",
+        "error": "Phone number too short"
+      }
+    ]
+  },
+  "credit_cards": {
+    "valid": [
+      {
+        "raw_masked": "371 ********* 431",
+        "luhn_valid": true
+      },
+      {
+        "raw_masked": "378 ********* 005",
+        "luhn_valid": true
+      }
+    ],
+    "rejected": [
+      {
+        "raw_masked": "550 ********** 304",
+        "error": "Failed Luhn check"
+      },
+      {
+        "raw_masked": "999 ********** 999",
+        "error": "Test card not allowed"
+      },
+      {
+        "raw_masked": "123 ********** 456",
+        "error": "Test card not allowed"
+      },
+      {
+        "raw_masked": "601 ********** 117",
+        "error": "Failed Luhn check"
+      },
+      {
+        "raw_masked": "406 ********** 002",
+        "error": "Failed Luhn check"
+      },
+      {
+        "raw_masked": "000 ********** 000",
+        "error": "Test card not allowed"
+      }
+    ]
+  },
+  "urls": [
+    "https://crm.apexsolutions.co.ke/tickets/10482",
+    "https://cdn.apexsolutions.co.ke/banners/may2026.png",
+    "http://changelog.apexsolutions.co.ke/v3",
+    "https://www.notion.so/apex-team/sprint-42-retrospective-aabbccdd1122",
+    "https://developer.apexsolutions.co.ke/docs/v2",
+    "http://cdn.apexsolutions.co.ke/screenshots/ticket_10482_err.png",
+    "https://apexsolutions.co.ke/unsubscribe?token=abc123XYZ",
+    "https://portal.apexsolutions.co.ke"
+  ],
+  "html_tags": [
+    "<head>",
+    "</head>",
+    "</body>",
+    "<ul>",
+    "</em>",
+    "<li>",
+    "<p>",
+    "<strong>",
+    "</title>",
+    "</strong>",
+    "</p>",
+    "<span class=\"highlight\">",
+    "<a href=\"https://portal.apexsolutions.co.ke\">",
+    "<img src=\"https://cdn.apexsolutions.co.ke/banners/may2026.png\" alt=\"May Banner\" />",
+    "</footer>",
+    "</script>",
+    "</h1>",
+    "<small>",
+    "</html>",
+    "<p style=\"colour: red;\">",
+    "</span>",
+    "</small>",
+    "<html>",
+    "</a>",
+    "<footer>",
+    "<h1>",
+    "<a href=\"https://apexsolutions.co.ke/unsubscribe?token=abc123XYZ\">",
+    "</ul>",
+    "<script>",
+    "<body>",
+    "<title>",
+    "</li>",
+    "<a href=\"http://changelog.apexsolutions.co.ke/v3\">",
+    "<em>",
+    "<img src=x onerror=alert(1)>"
+  ],
+  "hashtags": [
+    "#ApexSolutions",
+    "#Nairobi",
+    "#NeverSettle",
+    "#BugHunter",
+    "#Frontend",
+    "#Proud",
+    "#ALU",
+    "#QA",
+    "#RegexIsFun",
+    "#TechAfrica",
+    "#SoftwareEngineering"
+  ],
+  "currency_amounts": [
+    "$0.00",
+    "$530.50",
+    "KES 4,500.00",
+    "$89.99"
+  ],
+  "times": [
+    "23:58",
+    "10:04 AM",
+    "2:30 PM",
+    "10:30 AM",
+    "10:10 AM",
+    "10:12 AM",
+    "10:09 AM",
+    "09:14 AM",
+    "5:59 PM",
+    "10:05 AM",
+    "5:00 pm",
+    "12:01 PM",
+    "3:45 PM",
+    "10:02 AM",
+    "10:08 AM",
+    "13:00",
+    "10:00 AM",
+    "9:00 AM",
+    "08:00 AM",
+    "10:07 AM",
+    "14:45",
+    "23:59",
+    "10:11 AM"
+  ]
+}
